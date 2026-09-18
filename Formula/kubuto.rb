@@ -11,7 +11,7 @@ class Kubuto < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/akshatsinha007/kubuto/releases/download/v0.1.0/kubuto_0.1.0_darwin_amd64.tar.gz"
-      sha256 "a50bd03534964b5b971a606b0126b282ac485c69bf9cc7a80a16239abbbb1939"
+      sha256 "1fbc6915c28c0d7b91f59de326a522dbed8a100042695f29efc6e785fe27b9b6"
 
       define_method(:install) do
         bin.install "kubuto"
@@ -19,7 +19,7 @@ class Kubuto < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/akshatsinha007/kubuto/releases/download/v0.1.0/kubuto_0.1.0_darwin_arm64.tar.gz"
-      sha256 "23fd9a69babb3c313cd294f00296c27439f147262fd06be6eb0a7aeb57504ff4"
+      sha256 "63d6662a63597d2f7b989c2c31d9a02852b22f31b744cf24003368c9fad46daa"
 
       define_method(:install) do
         bin.install "kubuto"
@@ -30,14 +30,14 @@ class Kubuto < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/akshatsinha007/kubuto/releases/download/v0.1.0/kubuto_0.1.0_linux_amd64.tar.gz"
-      sha256 "5f5f2f83f09eec854f2978f291b08a22257cba38a19f80c43e469695cf203bb5"
+      sha256 "ec8e637c61ee89554b791c9f71f61033ce8019bf1c4d3380de58404484ea427c"
       define_method(:install) do
         bin.install "kubuto"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/akshatsinha007/kubuto/releases/download/v0.1.0/kubuto_0.1.0_linux_arm64.tar.gz"
-      sha256 "e5f595ba11f6530979536a901959e00013a177c98f3379fd3cedd097b25294a2"
+      sha256 "9030429708d0bcec0df6085ad74faae5eea0693480ae1f8f7a57ea24a0c596b2"
       define_method(:install) do
         bin.install "kubuto"
       end
